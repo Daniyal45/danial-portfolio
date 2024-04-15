@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/gotham_book.ttf') format('truetype'),
+    url('../assets/fonts/gotham_book.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Gotham_Medium';
+  src: url('../assets/fonts/gotham_med.ttf') format('truetype'),
+    url('../assets/fonts/gotham_med.woff') format('woff')
+}
+
+
+body {
+  font-family: Gotham, sans-serif;
+}
+
+#Container {
+  max-width: 1536px;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin: auto;
+}
+
+#Header {
+  margin: 1.5em 0;
+}
+
+/* primary-blue #0394FC */
+/* primary-green #56B26E */
+
+.primary-green-text {
+  color: #56B26E;
+}
+
+.primary-green-button {
+  background-color: #56B26E;
+  cursor: pointer;
+  color: #FFF;
+  border: 0;
+}
+
+.primary-green-button:hover,
+.primary-green-button:focus {
+  background-color: #46945b;
+}
+
+.bold {
+  font-family: Gotham_Medium !important;
+}
+
+.header-logo {
+  width: 162px;
+  display: flex;
+  font-size: 1.8em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-buttons .primary-green-button {
+  padding: 0.2em 1.5em;
+  border-radius: 5px;
+}
+
+.header-buttons>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-image {
+  width: 800px;
+}
+
+.banner-text {
+  font-family: Gotham_Medium;
+  width: 400px;
+}
+
+.banner-text>span {
+  font-size: 3.3em;
+}
+
+.banner-text span:last-child {
+  color: rgb(39, 119, 232);
+  font-size: 2.0em !important;
+}
+
+.col-container {
+  display: table;
+  /* Make the container element behave like a table */
+  width: 100%;
+  /* Set full-width to expand the whole page */
+}
+
+.col {
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
+  vertical-align: middle;
+}
+
+/* If the browser window is smaller than 1200px, make the columns stack on top of each other */
+@media only screen and (max-width: 1200px) {
+  .col {
+    display: block;
+    width: 100%;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.custom-bordered-card {
+  border-radius: 20px;
+  height: 225px;
+}
+
+#Projects h1,
+#About-Me h1 {
+  font-size: 3em;
+  text-align: center;
+  color: rgb(39, 119, 232);
+}
+
+#About-Me {
+  margin-bottom: 50px;
+}
+
+#Footer {
+  margin-top: 24em;
+}
+
+.footer-top-border-thick {
+  position: relative;
+  border-top: 5px solid black;
+  padding-top: 5px;
+  z-index: 20;
+}
+
+.footer-top-border-thick>div {
+  background: #56B26E;
+  z-index: 20;
+}
+
+.semi-circle {
+  margin: auto;
+  margin-top: -232px;
+  text-align: center;
+  padding-top: 4em;
+  /* position: absolute; */
+  /* top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  height: 350px;
+  width: 700px;
+  border-radius: 1400px 1400px 0 0;
+  background-color: rgb(39, 119, 232);
+}
+
+.semi-circle>div span {
+  font-size: 1.5em;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  color: #FFF;
+  font-size: 1.23em;
+}
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+}
+
+/* regular step */
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.step .line {
+  top: 23px;
+  left: 9px;
+  height: 100%;
+  position: absolute;
+  border-left: 3px solid gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+.step.completed .line {
+  border-left: 3px solid #FFF;
+}
+
+.step.active .circle {
+  visibility: visible;
+  border-color: #FFF;
+}
+
+.step.empty .circle {
+  visibility: hidden;
+}
+
+.step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1;
+  /* behind the circle to completely hide */
+}
+
+.content {
+  width: 500px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.content-date {
+  margin-right: 20px;
+  width: 500px;
+  text-align: left;
+}
+
+/**/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  #Container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-image{
+    width: 100%;
+  }
+
+  .flex-column {
+    flex-basis: 100%;
+  }
+
+  .semi-circle {
+    padding-top: 2.3em;
+    height: 283px;
+    width: 449px;
+  }
+
+  .semi-circle>div span {
+    font-size: 1em;
+  }
+.content-date,
+.content {
+  font-size: 0.6em;
+  margin-right: 10px;
+}
+
+.content {
+  margin-left: 10px;
+
+
+}
+
+  .banner-text{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .semi-circle {
+    padding-top: 1.3em;
+    height: 283px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .banner-text>span {
+    font-size: 2.0em;
+  }
+  .banner-text span:last-child {
+    font-size: 1.3em;
+  }
+  .w3-xlarge {
+    font-size: 20px !important;
+  }
+  #Projects h1, #About-Me h1 {
+    font-size: 2.2em;
+  }
+}
+
+a {
+  text-decoration: none;
+}
