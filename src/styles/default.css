@@ -45,6 +45,12 @@ body {
   background-color: #46945b;
 }
 
+.back-button {
+  margin: 12px 0 0 0;
+  font-size: 1.3em;
+  padding: 1em 1em;
+}
+
 .bold {
   font-family: Gotham_Medium !important;
 }
@@ -89,7 +95,7 @@ body {
 }
 
 .banner-text span:last-child {
-  color: rgb(39, 119, 232);
+  color: #608adb;
   font-size: 2.0em !important;
 }
 
@@ -131,10 +137,11 @@ body {
 }
 
 #Projects h1,
-#About-Me h1 {
+#About-Me h1,
+#Contact h1 {
   font-size: 3em;
   text-align: center;
-  color: rgb(39, 119, 232);
+  color: #608adb;
 }
 
 #About-Me {
@@ -169,7 +176,7 @@ body {
   height: 350px;
   width: 700px;
   border-radius: 1400px 1400px 0 0;
-  background-color: rgb(39, 119, 232);
+  background-color: #608adb;
 }
 
 .semi-circle>div span {
@@ -268,13 +275,18 @@ body {
   box-sizing: border-box;
 }
 
+.contact-link-icon {
+  width: 50px;
+  height: 50px;
+}
+
 @media screen and (max-width: 768px) {
   #Container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .project-image{
+  .project-image {
     width: 100%;
   }
 
@@ -291,21 +303,25 @@ body {
   .semi-circle>div span {
     font-size: 1em;
   }
-.content-date,
-.content {
-  font-size: 0.6em;
-  margin-right: 10px;
-}
 
-.content {
-  margin-left: 10px;
+  .content-date,
+  .content {
+    font-size: 0.6em;
+    margin-right: 10px;
+  }
 
+  .content {
+    margin-left: 10px;
+  }
 
-}
-
-  .banner-text{
+  .banner-text {
     width: 100%;
   }
+}
+
+.contact-link-text:hover {
+  color: #608adb;
+  ;
 }
 
 @media screen and (max-width: 481px) {
@@ -315,20 +331,50 @@ body {
     width: 100%;
     border-radius: 0;
   }
+
   .banner-text>span {
     font-size: 2.0em;
   }
+
   .banner-text span:last-child {
     font-size: 1.3em;
   }
+
   .w3-xlarge {
     font-size: 20px !important;
   }
-  #Projects h1, #About-Me h1 {
+
+  #Projects h1,
+  #About-Me h1,
+  #Contact h1 {
     font-size: 2.2em;
   }
+
+  .contact-link-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-link-text {
+    font-size: 0.67em !important;
+  }
+
+  .back-button {
+    margin: 6px 0 6px 0;
+    font-size: 1.0em;
+    padding: 0.5em 0.5em;
+  }
+
+  .header-buttons .primary-green-button {
+    padding: 0.2em 1.0em;
+  }
+
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 1.6em;
 }

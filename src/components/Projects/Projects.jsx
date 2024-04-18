@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 // Utils
 
-function Projects() {
+function Projects(props) {
 
   const PROJECTS = [
     {
@@ -82,11 +82,11 @@ function Projects() {
 
   return (
     <div>
-      <div className='w3-container'>
+      <div className=''>
         <div className="w3-row-padding">
           {
             PROJECTS?.map((project) => (
-              <div className="w3-col m4 s12 w3-margin-top cursor-pointer w3-hover-opacity" key={project.id}>
+              <div className="w3-col m4 s12 w3-margin-top cursor-pointer w3-hover-opacity" key={project.id} onClick={e => props?.onClick(e, 'projects')}>
                 <Link to={project?.link_to}>
                   {PROJECT_ITEM(project)}
                 </Link>

@@ -13,6 +13,7 @@ export default function SeatMenu() {
             <ul>
               <li> React JS </li>
               <li> Material UI </li>
+              <li> Apex Charts </li>
               <li> Websockets </li>
               <li> Rest API </li>
               <li> Javascript </li>
@@ -25,7 +26,9 @@ export default function SeatMenu() {
           <div className='px-1 w3-xlarge'>
             <h2> Project Description </h2>
             <p>
-              Seat Menu is a single platform web application which has seperate portal for food business owners to manage their food chain branches inside different venues and also has a customer portal which serves as in-seat food ordering platform, popular for venues like stadiums, theatres, cinemas, soccer grounds and many others, making food ordering and in-seat delivery easier, faster and better without any hassle.
+              Seat Menu is a web application combining the features for food chain business management and ordering app.
+              This application is structured in a hierarchy of modules which included venue, brand, branch and menu. <br /> <br />It has two seperate portals, one for food chain business owners to manage their branches inside different venues and the other is a customer portal which serves as in-seat food ordering platform, popular for venues like stadiums, theatres, cinemas, soccer grounds and many others, making food ordering and in-seat delivery easier, faster and better without any hassle.
+              I also made a dashboard screen to show different graphs and charts using Apex Charts.
             </p>
           </div>
         </div>

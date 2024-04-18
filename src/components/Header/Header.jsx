@@ -30,7 +30,7 @@ function Header(props) {
       </div>
       <div id='Contact-Button'>
         <PhoneIcon className='w-10 h-10' />
-        <button className='primary-green-button'>
+        <button className='primary-green-button' onClick={e => props?.onClick(e, 'contact')}>
           Contact
         </button>
       </div>

@@ -13,6 +13,7 @@ export default function Kmrc() {
             <ul>
               <li> JQuery </li>
               <li> Javascript </li>
+              <li> Firebase </li>
               <li> CSS </li>
               <li> HTML </li>
             </ul>

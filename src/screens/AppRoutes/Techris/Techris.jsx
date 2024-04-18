@@ -13,10 +13,11 @@ export default function Techris() {
             <ul>
               <li> Python </li>
               <li> Javascript </li>
+              <li> Postgres </li>
               <li> Rest API </li>
               <li> HTML </li>
               <li> CSS </li>
-              <li> PostgreSQL </li>
+              <li> SQL </li>
             </ul>
           </div>
         </div>

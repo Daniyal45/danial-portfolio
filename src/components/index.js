@@ -4,7 +4,7 @@ import Projects from "./Projects/Projects";
 import AboutMe from "./AboutMe/AboutMe";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
-import { DaniyalIcon, PhoneIcon, PersonIcon, ProjectIcon, BannerImage } from "./Svgs";
+import { DaniyalIcon, PhoneIcon, PersonIcon, ProjectIcon, RocketIcon, EmailIcon, WhatsappIcon, LinkedinIcon, BackIcon, BannerImage } from "./Svgs";
 
 export {
     Header,
@@ -17,5 +17,10 @@ export {
     PhoneIcon,
     PersonIcon,
     ProjectIcon,
+    RocketIcon,
+    LinkedinIcon,
+    WhatsappIcon,
+    EmailIcon,
+    BackIcon,
     BannerImage
 };

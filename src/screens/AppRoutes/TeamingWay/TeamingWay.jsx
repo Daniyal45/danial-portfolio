@@ -13,6 +13,7 @@ export default function TeamingWay() {
             <ul>
               <li> React JS </li>
               <li> Next JS </li>
+              <li> Redux </li>
               <li> Tailwind </li>
               <li> Google Analytics </li>
               <li> Rest API </li>
