@@ -28,7 +28,7 @@ export default function SaudiaPrivate() {
           <div className='px-1 w3-xlarge'>
             <h2> Project Description </h2>
             <p>
-              Revamped the website for Saudia Private, implementing a modern look and feel UI according to their rebranded design and logo. Additionally, integrated Google Analytics to gather real-time data on website usage, for getting insights for business decisions. Utilized the i18n plugin to display website content in both English and Arabic. The website consists of five pages.
+              Revamped the website for Saudia Private, implementing a modern look and feel UI according to their rebranded design and logo. Additionally, integrated Google Analytics to gather real-time data on website usage, for getting insights for business decisions. Utilized the i18n plugin to display website content in both English and Arabic. <br />The website consists of five pages.
 
               <br /><br />The Home page has four sections; flight booking, fleets, services and partners. The flight booking section includes a multi stepper form to book private jet from destination to departure.
               <br /><br />The Our services page has two sections; ground handling and aircraft charter.
