@@ -12,7 +12,9 @@ function Contact(props) {
     <div id='Contact' ref={props?.reference}>
       <div>
         <h1 className="bold"> CONTACT </h1>
-        <p className='w3-xlarge'>If you'd like to know more about my work or process feel free to get in touch.</p>
+        <p className='w3-xlarge'>
+          Let's collaborate to craft something extraordinary together! <br /> If you'd like to know more about my work or process feel free to get in touch.
+        </p>
         <div >
           <div className='w3-row w3-xlarge'>
             <div className='w3-col flex items-center justify-between wrap'>
