@@ -3,6 +3,7 @@ import Banner from "./Banner/Banner";
 import Projects from "./Projects/Projects";
 import AboutMe from "./AboutMe/AboutMe";
 import Contact from "./Contact/Contact";
+import Gallery from "./Gallery/Gallery";
 import Footer from "./Footer/Footer";
 import { DaniyalIcon, PhoneIcon, PersonIcon, ProjectIcon, RocketIcon, EmailIcon, WhatsappIcon, LinkedinIcon, BackIcon, BannerImage } from "./Svgs";
 
@@ -12,6 +13,7 @@ export {
     Projects,
     AboutMe,
     Contact,
+    Gallery,
     Footer,
     DaniyalIcon,
     PhoneIcon,

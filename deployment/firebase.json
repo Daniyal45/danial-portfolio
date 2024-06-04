@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "profile-daniyal",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
