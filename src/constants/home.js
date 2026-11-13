@@ -254,6 +254,8 @@ export const PROJECTS = [
     name: "KMRC Website",
     company: "KMRC",
     logo: { src: "/images/kmrc/kmrc_logo.png", width: 900, height: 213 },
+    // Icon-only crop: the full wordmark is unreadable at card-thumbnail size.
+    cardLogo: { src: "/images/kmrc/kmrc_icon.png", width: 171, height: 213 },
     role: "Front-End Software Developer",
     tech: ["jQuery", "JavaScript", "Firebase", "CSS", "HTML"],
     description: [
