@@ -21,7 +21,7 @@ function ProjectDetail({ slug }) {
       <nav aria-label="Primary" className="mx-auto flex h-16 max-w-[1160px] items-center gap-4 px-5 md:px-8">
         <Link href="/" className="mr-auto flex min-h-11 items-center gap-3">
           <Image src="/portfolio.svg" width={36} height={36} alt={HERO.name} className="size-9" />
-          <Image src="/Green secondary logo.jpg" width={394} height={222} alt="" className="h-9 w-auto" />
+          <Image src="/images/green-secondary-logo.jpg" width={394} height={222} alt="" className="h-9 w-auto" />
         </Link>
         <Link
           href="/#projects"
