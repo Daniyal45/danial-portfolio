@@ -511,8 +511,11 @@ function Home() {
                   width={cardLogo.width}
                   height={cardLogo.height}
                   alt={`${name} logo`}
-                  className="size-full max-w-none object-contain"
+                  className={classNames("size-full max-w-none object-contain", cardLogo !== logo && "lg:hidden")}
                 />
+                {cardLogo !== logo && (
+                  <Image src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} className="hidden size-full max-w-none object-contain lg:block" />
+                )}
               </div>
               <h3 className="text-base font-medium leading-[1.3]">{name}</h3>
               <p className="mt-1 text-[13px] text-ink-3">{company}</p>
