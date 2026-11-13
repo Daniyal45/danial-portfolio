@@ -505,7 +505,7 @@ function Home() {
               delay={(index % 4) * 0.05 + (index > 3 ? 0.08 : 0)}
               className="group grid grid-cols-[104px_1fr] items-center gap-x-4 rounded-xl border border-line bg-surface p-3 transition-colors duration-150 ease-out-soft hover:border-line-2 sm:flex sm:flex-col sm:items-stretch sm:p-4"
             >
-              <div className="row-span-3 grid h-[72px] place-items-center rounded-md bg-white p-1 sm:mb-4 sm:h-[88px] sm:p-1.5">
+              <div className="row-span-3 grid h-[72px] grid-cols-[minmax(0,1fr)] grid-rows-[minmax(0,1fr)] place-items-center overflow-hidden rounded-md bg-white p-1 sm:mb-4 sm:h-[88px] sm:p-1.5">
                 <Image
                   src={cardLogo.src}
                   width={cardLogo.width}
