@@ -44,7 +44,7 @@ function ProjectDetail({ slug }) {
           <Image src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} className="size-full object-contain" />
         </div>
         <div>
-          <p className="font-mono text-xs text-ink-3">Case study · {caseNumber}</p>
+          <p className="font-mono text-xs text-ink-3">Project Details · {caseNumber}</p>
           <h1 className="mb-2 mt-1.5 text-[clamp(32px,5vw,56px)] font-medium leading-[1.05] tracking-[-.03em]">{name}</h1>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-[15px] text-ink-2">
             <span>
