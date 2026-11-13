@@ -182,7 +182,7 @@ function Home() {
       <nav aria-label="Primary" className="mx-auto flex h-16 max-w-[1160px] items-center gap-3 px-5 md:gap-6 md:px-8">
         <a href="#home" onClick={handleClickLogo} className="mr-auto flex min-h-11 items-center gap-3">
           <Image src="/portfolio.svg" width={36} height={36} alt={HERO.name} className="size-9" />
-          <Image src="/Green secondary logo.jpg" width={394} height={222} alt="" className="h-9 w-auto" />
+          <Image src="/images/green-secondary-logo.jpg" width={394} height={222} alt="" className="h-9 w-auto" />
         </a>
         <ul className="hidden gap-1 md:flex">
           {SECTIONS.slice(SECTION_INDEX.about, SECTION_INDEX.contact).map(({ id, label }, index) => {
@@ -457,10 +457,7 @@ function Home() {
       key={title}
       className={classNames("grid grid-cols-1 gap-3 p-5 sm:p-6 md:grid-cols-[200px_1fr] md:gap-8", index > 0 && "border-t border-line")}
     >
-      <div>
-        <h3 className="text-sm font-medium">{title}</h3>
-        <p className="mt-1 font-mono text-xs text-ink-3">{String(items.length).padStart(2, "0")} items</p>
-      </div>
+      <h3 className="text-sm font-medium">{title}</h3>
       {display === "chips" ? (
         <div className="flex min-w-0 flex-wrap content-start gap-2">
           {items.map((skill) => (
@@ -500,7 +497,10 @@ function Home() {
       <div className={innerClassName}>
         <Reveal direction={-1}>{SECTION_HEADING({ number: "04", title: "Projects", heading: "Selected work", isCompact: true })}</Reveal>
         <div className="mt-8 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
-          {PROJECTS.map(({ slug, name, company, logo }, index) => (
+          {PROJECTS.map(({ slug, name, company, logo }, index) => {
+            // Very wide logos (KMRC) shrink to illegible in the 104px mobile column, so give them the full card width.
+            const isWide = logo.width / logo.height > 4;
+            return (
             <Reveal
               key={slug}
               as={MotionLink}
@@ -508,7 +508,12 @@ function Home() {
               delay={(index % 4) * 0.05 + (index > 3 ? 0.08 : 0)}
               className="group grid grid-cols-[104px_1fr] items-center gap-x-4 rounded-xl border border-line bg-surface p-3 transition-colors duration-150 ease-out-soft hover:border-line-2 sm:flex sm:flex-col sm:items-stretch sm:p-4"
             >
-              <div className="row-span-3 grid h-[72px] place-items-center rounded-md bg-white p-1 sm:mb-4 sm:h-[88px] sm:p-1.5">
+              <div
+                className={classNames(
+                  "grid h-[72px] place-items-center rounded-md bg-white p-1 sm:mb-4 sm:h-[88px] sm:p-1.5",
+                  isWide ? "col-span-2 mb-3" : "row-span-3",
+                )}
+              >
                 <Image
                   src={logo.src}
                   width={logo.width}
@@ -517,14 +522,15 @@ function Home() {
                   className="size-full max-w-none object-contain"
                 />
               </div>
-              <h3 className="text-base font-medium leading-[1.3]">{name}</h3>
-              <p className="mt-1 text-[13px] text-ink-3">{company}</p>
-              <span className="mt-auto flex items-center gap-1.5 pt-2 text-sm font-medium text-link sm:pt-4">
+              <h3 className={classNames("text-base font-medium leading-[1.3]", isWide && "col-span-2")}>{name}</h3>
+              <p className={classNames("mt-1 text-[13px] text-ink-3", isWide && "col-span-2")}>{company}</p>
+              <span className={classNames("mt-auto flex items-center gap-1.5 pt-2 text-sm font-medium text-link sm:pt-4", isWide && "col-span-2")}>
                 View Details
                 <Icon path={ICONS.arrow} className="size-4 transition-transform duration-150 ease-out-soft group-hover:translate-x-0.5" />
               </span>
             </Reveal>
-          ))}
+            );
+          })}
         </div>
       </div>
     </Panel>

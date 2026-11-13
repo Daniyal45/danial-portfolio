@@ -24,7 +24,7 @@ export const metadata = {
     title: "Daniyal Hasan Shah — Experienced Software Engineer",
     description:
       "Experienced software engineer building web applications end to end with React, Next.js, Node.js and Python.",
-    images: ["/images/og-image.png"],
+    images: ["/images/og-image-2027.png"],
   },
 };
 
